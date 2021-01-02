@@ -53,3 +53,10 @@ mutation {
   }
 }
 
+Login mutation
+
+mutation {
+   login(email: "test@test.com", password: "password") {
+    email
+  }
+}
