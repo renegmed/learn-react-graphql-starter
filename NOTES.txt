@@ -1,0 +1,12 @@
+Status: wip 
+
+Mongo
+
+> mongo 
+
+> show dbs;
+
+> show collections;
+
+> db.users.find()
+
