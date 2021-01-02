@@ -43,3 +43,13 @@ Returns:
 { "_id" : ObjectId("5ff08f6b61643bafa1fb6663"), 
   "email" : "test@test.com", 
   "password" : "$2a$10$xjnhO7p66zyFKT7Tzaox0eqWSblMCNaqEU6LnQKDTjEYdZKeQ.ULu", "__v" : 0 }
+
+
+Logout mutation
+
+mutation {
+   logout {
+    email
+  }
+}
+
