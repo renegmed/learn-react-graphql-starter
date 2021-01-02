@@ -9,7 +9,7 @@ class LoginForm extends Component {
         this.props.mutate({ 
             variables: { email, password },
             refetchQueries: [{ query }] 
-        });
+        }).catch(res => { debugger });
     }
     render() { 
         return (
