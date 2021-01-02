@@ -1,5 +1,9 @@
 Status: wip 
 
+
+Need to update fsevents
+$ npm install fsevents
+
 Mongo
 
 > mongo 
@@ -10,3 +14,32 @@ Mongo
 
 > db.users.find()
 
+-----------------
+
+$ make dev
+
+http://localhost:4000/graphql
+
+Schema
+    signup(email: Stringpassword: String): UserType
+
+mutation {
+    signup(email: "test@test.com", password: "password") {
+        email
+    }
+}
+
+Returns:
+  "data": {
+    "signup": {
+      "email": "test@test.com"
+    }
+  }
+}
+> show dbs;
+> use starter-db;
+> show collections;
+> db.users.find();
+{ "_id" : ObjectId("5ff08f6b61643bafa1fb6663"), 
+  "email" : "test@test.com", 
+  "password" : "$2a$10$xjnhO7p66zyFKT7Tzaox0eqWSblMCNaqEU6LnQKDTjEYdZKeQ.ULu", "__v" : 0 }

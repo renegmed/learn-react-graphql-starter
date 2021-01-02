@@ -1,4 +1,4 @@
-const grahpql = require('graphql');
+const graphql = require('graphql');
 const {
     GraphQLObjectType,
     GraphQLString
